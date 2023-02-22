@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-public class sumOfList
+public class integerList
 {
     List<int> ints;
 
@@ -22,6 +22,22 @@ public class sumOfList
             sum += i;
         }
         return sum.ToString();
+    }
+    public string productList(List<int> list)
+    { 
+       int product = 0;
+
+        for (int x = 0; x < ints.Count; x++)
+        {
+            if (x == 0)
+            {
+              product = ints[x];
+            }
+
+              product = product * ints[x];
+        }
+
+       return product.ToString();
     }
 
 
