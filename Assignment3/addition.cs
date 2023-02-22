@@ -53,14 +53,14 @@ public class integerList
         Console.WriteLine("Would you like to add a number to the list?");
         string input = Console.ReadLine();
         input = input.ToLower();
-        var list = new integerList();
-        list.list();
+        var test = new integerList();
+        test.list();
         while (input == "yes")
         {
             Console.WriteLine("Please tell the system what number you would like to add to the list?");
             string number = Console.ReadLine();
             int num = Convert.ToInt32(number);
-            list.addNumber(num);
+            test.addNumber(num);
             Console.WriteLine("Would you like to add another number to the list?");
             input = Console.ReadLine();
             input = input.ToLower();
@@ -71,8 +71,8 @@ public class integerList
         }
         
 
-        string additionOutput = list.addList();
-        string productOutput = list.productList();
+        string additionOutput = test.addList();
+        string productOutput = test.productList();
 
         Console.WriteLine($"The sum of the list is {additionOutput} and the product of the list is {productOutput}");
         Console.WriteLine("Enter another key to exit application");
