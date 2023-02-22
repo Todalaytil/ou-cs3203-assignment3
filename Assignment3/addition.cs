@@ -46,16 +46,6 @@ public class integerList
         ints.Add(num);
     }
 
-    public List<int> reversalList()
-    {
-        List<int> reversed = new List<int>;
-        for(int x = ints.Count - 1; x >= 0; x--)
-        {
-            reversed.Add(ints[x]);
-        }
-        return reversed;
-    }
-
     public static void Main()
     {
 
@@ -82,6 +72,14 @@ public class integerList
 
         string additionOutput = list.addList();
         string productOutput = list.productList();
+
+        // Reversal
+        var reversed = new integerList();
+        reversed.list();
+        for (int x = list.ints.Count - 1; x >= 0; x--)
+        {
+            reversed.addNumber(list.ints[x]);
+        }
 
         Console.WriteLine($"The sum of the list is {additionOutput} and the product of the list is {productOutput}");
         Console.WriteLine("Enter another key to exit application");
