@@ -46,6 +46,15 @@ public class integerList
         ints.Add(num);
     }
 
+    public List<int> reversalList()
+    {
+        List<int> reversed = new List<int>;
+        for(int x = ints.Count - 1; x >= 0; x--)
+        {
+            reversed.Add(ints[x]);
+        }
+        return reversed;
+    }
 
     public static void Main()
     {
